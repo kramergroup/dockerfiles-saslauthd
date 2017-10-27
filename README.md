@@ -31,7 +31,7 @@ ldap_password: <password>
 ```
 docker run -d \
     --name saslauthd \
-    --volume $(pwd)/saslauthd.conf:/etc/saslauthd.conf:ro \
+    --volume $(pwd)/saslauthd.conf:/etc/sasl2/saslauthd.conf:ro \
     dweomer/saslauthd
 ```
 

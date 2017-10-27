@@ -38,7 +38,7 @@ RUN set -x \
  && patch -p1 -i /tmp/cyrus-sasl-2.1.26-size_t.patch || true \
  && ./configure \
         --prefix=/usr \
-        --sysconfdir=/etc \
+        --sysconfdir=/etc/sasl2 \
         --localstatedir=/var \
         --disable-anon \
         --enable-cram \
